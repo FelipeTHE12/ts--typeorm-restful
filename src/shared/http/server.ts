@@ -1,7 +1,9 @@
 import express, { Request, Response, NextFunction } from 'express';
+import 'reflect-metadata';
 import cors from 'cors';
 import routes from './routes/mainRouter';
-import AppError from './errors/AppError';
+import AppError from '../errors/AppError';
+import '@shared/typeorm';
 
 const app = express();
 
