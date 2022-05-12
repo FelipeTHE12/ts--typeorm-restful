@@ -11,7 +11,7 @@ interface IRequest {
 }
 
 export default class UpdateProductService {
-  protected async execute({
+  public async execute({
     id,
     name,
     price,

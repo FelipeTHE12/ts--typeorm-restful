@@ -3,7 +3,7 @@ import Product from '../typeorm/entities/Product';
 import { ProductRepository } from '../typeorm/repositories/ProductsRepository';
 
 export default class ListProductService {
-  protected async execute(): Promise<Product[]> {
+  public async execute(): Promise<Product[]> {
     const productsRepository = getCustomRepository(ProductRepository);
     const products = await productsRepository.find();
 
